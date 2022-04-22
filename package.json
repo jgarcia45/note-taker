@@ -1,0 +1,19 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "Developing an application that can be used to write and save notes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgarcia45/note-taker.git"
+  },
+  "author": "Juan Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgarcia45/note-taker/issues"
+  },
+  "homepage": "https://github.com/jgarcia45/note-taker#readme"
+}
