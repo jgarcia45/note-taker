@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jgarcia45/note-taker/issues"
   },
-  "homepage": "https://github.com/jgarcia45/note-taker#readme"
+  "homepage": "https://github.com/jgarcia45/note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1"
+  }
 }
