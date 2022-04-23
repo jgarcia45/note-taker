@@ -55,7 +55,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Screenshot
+This is the start of the application:
 ![Note Taker](./public/assets/images/note_taker.png)
+This is when adding a note:
+![Typing](./public/assets/images/progress.png)
+This is when you look over a note written:
+![Looking](./public/assets/images/notes.png)
+
 
 ## Link
 A link to the [code](https://github.com/jgarcia45/note-taker):
