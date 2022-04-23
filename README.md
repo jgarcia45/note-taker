@@ -3,27 +3,32 @@
 ![GitHub](https://img.shields.io/github/license/jgarcia45/team-profile-generator)
 
 ## Technologies
+![Technologies](https://img.shields.io/badge/-HTML-E34F26?logo=HTML5&logoColor=white)
+![Technologies](https://img.shields.io/badge/-CSS-1572B6?logo=CSS3&logoColor=white)
 ![Technologies](https://img.shields.io/badge/-JavaScript-007396?logo=JavaScript&logoColor=white)
 ![Technologies](https://img.shields.io/badge/-Node.js-339933?logo=Node.js&logoColor=white)
+![Technologies](https://img.shields.io/badge/-Express-000000?logo=Express&logoColor=white)
 ![Technologies](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white)
 ![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)
+![Technologies](https://img.shields.io/badge/-Heroku-430098?logo=Heroku&logoColor=white)
+
 
 ## Description
-The application will be invoked by using the following command:
+Created an application called Note Taker that allows user to write and save notes. The application will use [Express.js](https://www.npmjs.com/package/express) as the back end and will save and retrieve the note data from a JSON file. The application will be deployed on Heroku. The application can be invoked with the following command if running on your local machine:
 ```
-node index.js
+npm start
 ```
 ## Installation
 ***Requirments***
 
-[Node.js](https://nodejs.org/en/)
+[Node.js](https://nodejs.org/en/) | [Express.js](https://www.npmjs.com/package/express)
 
 ***Once Installed:***
 1. Clone the Repository on to your machine.
 2. Open the terminal and ensure you are in the right file path.
 3. Run the command ```npm install``` to download the packages.
-4. Then run the command ```node index.js``` to run the software.
-5. The readme file is saved under the ```dist``` folder.
+4. Then run the command ```npm start``` to run the software.
+5. Then open the website on your local server
 
 ## User Story
 ```
@@ -50,19 +55,14 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 ## Screenshot
-![]()
-
-## Video
-A link to the [Video]():
-```
-```
+![Note Taker](./public/assets/images/note_taker.png)
 
 ## Link
 A link to the [code](https://github.com/jgarcia45/note-taker):
 ```
 https://github.com/jgarcia45/note-taker
 ```
-A link to the [URL](https://shielded-depths-21814.herokuapp.com/):
+A link to the deployed [URL](https://shielded-depths-21814.herokuapp.com/):
 ```
 https://shielded-depths-21814.herokuapp.com/
 ```
