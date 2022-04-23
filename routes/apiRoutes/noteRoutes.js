@@ -1,7 +1,8 @@
+// Variable Definition
 const router = require('express').Router();
 const fs = require('fs');
-const { array } = require('yargs');
 
+// Reads the db.json file and return all the saved notes as JSON
 router.get('/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         const notes = JSON.parse(data);
@@ -9,6 +10,7 @@ router.get('/notes', (req, res) => {
     });
 });
 
+// Receives new note to save on the request body, add it to the db.json file, and return the new note to the client.
 router.post('/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         const notes = JSON.parse(data);
@@ -17,14 +19,13 @@ router.post('/notes', (req, res) => {
         note.id = id;
         notes.push(note);
 
-        fs.writeFileSync('db/db.json', JSON.stringify(notes), (err, data) => {
-            //fdsafd
-        });
+        fs.writeFileSync('db/db.json', JSON.stringify(notes));
 
         res.json(notes);
     });
 });
 
+// Deletes any note saved onto the db.json file
 router.delete('/notes/:id', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         const notes = JSON.parse(data);
@@ -33,9 +34,7 @@ router.delete('/notes/:id', (req, res) => {
 
         const deleted = notes.filter((target) => target.id != id);
 
-        fs.writeFileSync('./db/db.json', JSON.stringify(deleted), (err, data) => {
-            //
-        });
+        fs.writeFileSync('./db/db.json', JSON.stringify(deleted));
 
         res.json(notes);
     });
